@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REGENT English Institute | Maipú, Mendoza</title>
+<meta name="description" content="Academia de inglés en Maipú, Mendoza. Cursos para niños, adolescentes y adultos. Preparación para exámenes. 4.7 ⭐ calificación. Inscribite ahora.">
+<meta name="keywords" content="inglés Maipú, academia inglés Mendoza, cursos inglés, REGENT English Institute, clases inglés">
+<meta property="og:title" content="REGENT English Institute">
+<meta property="og:description" content="Aprendé inglés de forma efectiva y profesional en Maipú, Mendoza.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0f2744;
+    --navy-mid: #1a3a60;
+    --navy-light: #264d7e;
+    --gold: #c0272d;
+    --gold-light: #e05258;
+    --gold-pale: #fde8e9;
+    --white: #ffffff;
+    --off-white: #f8f6f1;
+    --gray-100: #f0eee9;
+    --gray-200: #d8d4cb;
+    --gray-400: #9b9488;
+    --gray-600: #5e5a52;
+    --gray-800: #2e2c27;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Lato', 'Helvetica Neue', sans-serif;
+    --shadow-sm: 0 2px 12px rgba(15,39,68,0.08);
+    --shadow-md: 0 8px 32px rgba(15,39,68,0.14);
+    --shadow-lg: 0 20px 60px rgba(15,39,68,0.18);
+    --radius: 4px;
+    --radius-lg: 8px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; font-size: 16px; }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--gray-800);
+    background: var(--white);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  img { max-width: 100%; display: block; }
+  a { text-decoration: none; color: inherit; }
+
+  /* ── NAV ── */
+  #navbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: transparent;
+    transition: background 0.4s, box-shadow 0.4s;
+  }
+  #navbar.scrolled {
+    background: var(--navy);
+    box-shadow: var(--shadow-md);
+  }
+  .nav-inner {
+    max-width: 1200px; margin: 0 auto;
+    padding: 0 2rem;
+    height: 72px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-logo {
+    display: flex; align-items: center; gap: 12px;
+  }
+  .nav-logo-mark {
+    width: 44px; height: 44px;
+    background: var(--gold); border-radius: 2px; display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-display);
+    font-size: 18px; font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.5px;
+    flex-shrink: 0;
+  }
+  .nav-logo-text {
+    display: flex; flex-direction: column; line-height: 1.1;
+  }
+  .nav-logo-text .brand { font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--white); letter-spacing: 2px; }
+  .nav-logo-text .sub { font-size: 10px; color: var(--gold-light); letter-spacing: 3px; text-transform: uppercase; font-weight: 300; }
+
+  .nav-links { display: flex; align-items: center; gap: 2rem; }
+  .nav-links a { font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.85); font-weight: 700; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--gold-light); }
+  .nav-cta {
+    background: var(--gold); color: var(--white);
+    padding: 10px 22px; border-radius: var(--radius);
+    font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .nav-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+  .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+  .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: all 0.3s; }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    background: var(--navy);
+    position: relative; overflow: hidden;
+    display: flex; align-items: center;
+  }
+  .hero-bg-pattern {
+    position: absolute; inset: 0;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 79px, rgba(192,39,45,0.06) 80px),
+      repeating-linear-gradient(90deg, transparent, transparent 79px, rgba(192,39,45,0.06) 80px);
+    pointer-events: none;
+  }
+  .hero-circle {
+    position: absolute; right: -10%; top: 10%;
+    width: 70vmin; height: 70vmin;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 40%, rgba(38,77,126,0.5) 0%, transparent 70%);
+    border: 1px solid rgba(192,39,45,0.15);
+  }
+  .hero-circle-sm {
+    position: absolute; right: 8%; top: 55%;
+    width: 22vmin; height: 22vmin;
+    border-radius: 50%;
+    border: 1px solid rgba(192,39,45,0.25);
+  }
+  .hero-accent-line {
+    position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+    background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+  }
+  .hero-content {
+    position: relative; z-index: 2;
+    max-width: 1200px; margin: 0 auto; padding: 120px 2rem 80px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
+  }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: rgba(192,39,45,0.12);
+    border: 1px solid rgba(192,39,45,0.3);
+    padding: 6px 16px; border-radius: 2px;
+    font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--gold-light); font-weight: 700; margin-bottom: 1.5rem;
+  }
+  .hero-eyebrow::before { content: ''; display: block; width: 20px; height: 1px; background: var(--gold); }
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.8rem, 5vw, 4.2rem);
+    line-height: 1.1;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+  }
+  .hero-title em { color: var(--gold); font-style: italic; }
+  .hero-subtitle {
+    font-size: 1.05rem; color: rgba(255,255,255,0.7);
+    margin-bottom: 2.5rem; max-width: 480px; font-weight: 300; line-height: 1.8;
+  }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+  .btn-primary {
+    background: var(--gold); color: var(--white);
+    padding: 16px 36px; border-radius: var(--radius);
+    font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px; border: none; cursor: pointer;
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(192,39,45,0.4); }
+  .btn-outline {
+    background: transparent; color: var(--white);
+    padding: 15px 30px; border-radius: var(--radius);
+    font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    border: 1px solid rgba(255,255,255,0.35); transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px; cursor: pointer;
+  }
+  .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+  .hero-stats {
+    display: flex; gap: 2.5rem; margin-top: 3rem;
+    padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .hero-stat { display: flex; flex-direction: column; gap: 4px; }
+  .hero-stat-num { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--gold); }
+  .hero-stat-label { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.5); font-weight: 300; }
+
+  .hero-card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+  }
+  .hero-card-title {
+    font-family: var(--font-display); font-size: 1.1rem; color: var(--gold-light);
+    margin-bottom: 1rem;
+  }
+  .hero-card-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.07);
+    font-size: 0.9rem; color: rgba(255,255,255,0.8);
+  }
+  .hero-card-item:last-child { border-bottom: none; }
+  .hero-card-icon {
+    width: 36px; height: 36px; border-radius: var(--radius);
+    background: rgba(192,39,45,0.15); display: flex; align-items: center; justify-content: center;
+    font-size: 16px; flex-shrink: 0;
+  }
+  .hero-rating {
+    display: flex; align-items: center; gap: 8px; margin-top: 1.5rem;
+    padding: 12px 16px; background: rgba(192,39,45,0.1); border-radius: var(--radius);
+    border: 1px solid rgba(192,39,45,0.2);
+  }
+  .stars { color: var(--gold); font-size: 14px; letter-spacing: 2px; }
+  .rating-text { font-size: 0.85rem; color: rgba(255,255,255,0.75); }
+  .rating-num { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; color: var(--gold); }
+
+  /* ── SECTIONS ── */
+  section { padding: 100px 0; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+  .section-label {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--gold); font-weight: 700; margin-bottom: 1rem;
+  }
+  .section-label::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+  .section-title {
+    font-family: var(--font-display); font-size: clamp(2rem, 3.5vw, 2.8rem);
+    line-height: 1.2; color: var(--navy); font-weight: 700; margin-bottom: 1rem;
+  }
+  .section-title em { color: var(--gold); font-style: italic; }
+  .section-subtitle { font-size: 1.05rem; color: var(--gray-600); max-width: 540px; font-weight: 300; line-height: 1.8; }
+
+  /* ── WHY US ── */
+  #why { background: var(--off-white); }
+  .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-top: 4rem; }
+  .why-features { display: flex; flex-direction: column; gap: 0; }
+  .why-item {
+    display: flex; gap: 1.5rem; padding: 1.5rem 0; border-bottom: 1px solid var(--gray-200);
+    opacity: 0; transform: translateX(-20px); transition: all 0.5s;
+  }
+  .why-item.visible { opacity: 1; transform: none; }
+  .why-item:first-child { padding-top: 0; }
+  .why-item:last-child { border-bottom: none; }
+  .why-icon {
+    width: 52px; height: 52px; border-radius: var(--radius);
+    background: var(--navy); display: flex; align-items: center; justify-content: center;
+    font-size: 22px; flex-shrink: 0; color: var(--gold);
+  }
+  .why-item-content h3 { font-family: var(--font-display); font-size: 1.1rem; color: var(--navy); margin-bottom: 4px; }
+  .why-item-content p { font-size: 0.9rem; color: var(--gray-600); font-weight: 300; line-height: 1.7; }
+  .why-visual {
+    position: relative;
+  }
+  .why-visual-card {
+    background: var(--navy); border-radius: var(--radius-lg); overflow: hidden;
+    aspect-ratio: 4/5; display: flex; flex-direction: column; justify-content: flex-end; padding: 2rem;
+    position: relative;
+  }
+  .why-visual-bg {
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 50%, var(--navy-light) 100%);
+  }
+  .why-visual-pattern {
+    position: absolute; inset: 0;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(192,39,45,0.04) 20px, rgba(192,39,45,0.04) 21px);
+  }
+  .why-visual-text { position: relative; z-index: 2; }
+  .why-quote {
+    font-family: var(--font-display); font-size: 1.4rem; font-style: italic;
+    color: var(--white); line-height: 1.5; margin-bottom: 1rem;
+  }
+  .why-quote-attr { font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); font-weight: 700; }
+  .why-badge {
+    position: absolute; top: 1.5rem; right: 1.5rem; z-index: 3;
+    background: var(--gold); color: var(--white);
+    padding: 10px 14px; border-radius: var(--radius); text-align: center;
+    font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+  }
+  .why-badge .num { font-family: var(--font-display); font-size: 1.6rem; display: block; font-weight: 700; line-height: 1; }
+
+  /* ── ABOUT ── */
+  #about .container { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+  .about-img-wrapper { position: relative; }
+  .about-img-bg {
+    width: 100%; aspect-ratio: 4/5;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+    border-radius: var(--radius-lg); overflow: hidden; position: relative;
+  }
+  .about-img-pattern {
+    position: absolute; inset: 0;
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 15px, rgba(192,39,45,0.05) 15px, rgba(192,39,45,0.05) 16px);
+  }
+  .about-img-content {
+    position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 1rem; padding: 2rem;
+  }
+  .about-emblem { font-family: var(--font-display); font-size: 4rem; color: var(--gold-light); opacity: 0.3; font-weight: 700; }
+  .about-img-overlay {
+    position: absolute; bottom: 2rem; left: 2rem; right: 2rem;
+    background: rgba(15,39,68,0.9); border: 1px solid rgba(192,39,45,0.2);
+    border-radius: var(--radius); padding: 1.5rem;
+  }
+  .about-img-overlay p { font-family: var(--font-display); font-style: italic; color: var(--white); font-size: 1rem; line-height: 1.6; }
+  .about-img-overlay span { font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-top: 8px; display: block; }
+  .about-float {
+    position: absolute; top: -20px; right: -20px;
+    background: var(--gold); border-radius: var(--radius);
+    padding: 1.5rem; text-align: center; box-shadow: var(--shadow-md);
+  }
+  .about-float-num { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--white); line-height: 1; }
+  .about-float-label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--white); font-weight: 700; margin-top: 4px; opacity: 0.85; }
+  .about-text p { font-size: 1rem; color: var(--gray-600); font-weight: 300; line-height: 1.9; margin-bottom: 1.2rem; }
+  .about-pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
+  .pillar { background: var(--off-white); border-left: 3px solid var(--gold); padding: 1rem 1.2rem; border-radius: 0 var(--radius) var(--radius) 0; }
+  .pillar h4 { font-family: var(--font-display); font-size: 0.95rem; color: var(--navy); margin-bottom: 3px; }
+  .pillar p { font-size: 0.8rem; color: var(--gray-400); font-weight: 300; line-height: 1.5; }
+
+  /* ── COURSES ── */
+  #courses { background: var(--navy); }
+  #courses .section-title { color: var(--white); }
+  #courses .section-subtitle { color: rgba(255,255,255,0.6); }
+  .courses-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3.5rem; flex-wrap: wrap; gap: 1.5rem; }
+  .courses-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .course-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius-lg); padding: 2rem;
+    transition: all 0.3s; position: relative; overflow: hidden;
+  }
+  .course-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: var(--gold); transform: scaleX(0); transform-origin: left;
+    transition: transform 0.3s;
+  }
+  .course-card:hover { background: rgba(255,255,255,0.07); border-color: rgba(192,39,45,0.3); transform: translateY(-4px); }
+  .course-card:hover::before { transform: scaleX(1); }
+  .course-card.featured { background: var(--gold); border-color: var(--gold); }
+  .course-card.featured::before { display: none; }
+  .course-card.featured .course-icon { background: rgba(255,255,255,0.15); }
+  .course-card.featured .course-num { color: rgba(255,255,255,0.2); }
+  .course-card.featured h3, .course-card.featured p, .course-card.featured .course-tag { color: var(--white); }
+  .course-card.featured .course-tag { background: rgba(255,255,255,0.15); color: var(--white); }
+  .course-card.featured .course-link { color: var(--white); border-color: rgba(255,255,255,0.5); }
+  .course-num { font-family: var(--font-display); font-size: 3.5rem; font-weight: 700; color: rgba(255,255,255,0.05); line-height: 1; margin-bottom: 1rem; }
+  .course-icon { width: 48px; height: 48px; background: rgba(192,39,45,0.12); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 1.2rem; }
+  .course-card h3 { font-family: var(--font-display); font-size: 1.2rem; color: var(--white); margin-bottom: 0.6rem; }
+  .course-card p { font-size: 0.88rem; color: rgba(255,255,255,0.6); line-height: 1.7; margin-bottom: 1.2rem; font-weight: 300; }
+  .course-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1.5rem; }
+  .course-tag { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 10px; border-radius: 2px; background: rgba(192,39,45,0.12); color: var(--gold-light); font-weight: 700; }
+  .course-link { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700; color: var(--gold-light); border-bottom: 1px solid rgba(192,39,45,0.4); padding-bottom: 2px; transition: gap 0.2s; }
+  .course-link:hover { gap: 10px; }
+
+  /* ── GALLERY ── */
+  #gallery { background: var(--off-white); }
+  .gallery-intro { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1.5rem; }
+  .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: auto; gap: 1rem; }
+  .gallery-item {
+    border-radius: var(--radius-lg); overflow: hidden; position: relative;
+    background: var(--gray-200); aspect-ratio: 4/3;
+  }
+  .gallery-item:first-child { grid-column: span 2; aspect-ratio: 16/9; }
+  .gallery-item-bg {
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .gi-1 { background: linear-gradient(135deg, #1a3a60 0%, #0f2744 100%); }
+  .gi-2 { background: linear-gradient(135deg, #264d7e 0%, #1a3a60 100%); }
+  .gi-3 { background: linear-gradient(135deg, #0f2744 0%, #162236 100%); }
+  .gi-4 { background: linear-gradient(135deg, #1e3d5f 0%, #0f2744 100%); }
+  .gi-5 { background: linear-gradient(135deg, #264d7e 0%, #162236 100%); }
+  .gallery-item-label {
+    position: absolute; bottom: 1rem; left: 1rem;
+    background: rgba(15,39,68,0.85); color: var(--gold-light);
+    font-size: 11px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700;
+    padding: 6px 12px; border-radius: var(--radius);
+  }
+  .gallery-pattern {
+    position: absolute; inset: 0;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(192,39,45,0.04) 20px, rgba(192,39,45,0.04) 21px);
+  }
+  .gallery-icon { font-size: 3rem; opacity: 0.15; }
+
+  /* ── TESTIMONIALS ── */
+  #testimonials { background: var(--white); }
+  .testimonials-header { text-align: center; margin-bottom: 3rem; }
+  .testimonials-header .section-label { justify-content: center; }
+  .testimonials-header .section-label::before { display: none; }
+  .rating-display {
+    display: flex; align-items: center; justify-content: center;
+    gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap;
+  }
+  .rating-big { font-family: var(--font-display); font-size: 4rem; font-weight: 700; color: var(--navy); }
+  .rating-stars-col { display: flex; flex-direction: column; }
+  .rating-stars-big { color: var(--gold); font-size: 1.4rem; letter-spacing: 4px; }
+  .rating-count { font-size: 0.85rem; color: var(--gray-400); font-weight: 300; }
+  .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .testimonial-card {
+    background: var(--off-white); border-radius: var(--radius-lg); padding: 2rem;
+    border: 1px solid var(--gray-200); transition: all 0.3s; position: relative;
+  }
+  .testimonial-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+  .testimonial-card.highlight { background: var(--navy); border-color: var(--navy); }
+  .testimonial-card.highlight .t-text { color: rgba(255,255,255,0.85); }
+  .testimonial-card.highlight .t-name { color: var(--white); }
+  .testimonial-card.highlight .t-role { color: rgba(255,255,255,0.5); }
+  .t-stars { color: var(--gold); font-size: 13px; letter-spacing: 2px; margin-bottom: 1rem; }
+  .t-text { font-family: var(--font-display); font-size: 1.05rem; font-style: italic; color: var(--gray-800); line-height: 1.7; margin-bottom: 1.5rem; }
+  .t-author { display: flex; align-items: center; gap: 12px; }
+  .t-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--navy); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 14px; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+  .testimonial-card.highlight .t-avatar { background: rgba(192,39,45,0.2); }
+  .t-name { font-size: 0.88rem; font-weight: 700; color: var(--navy); }
+  .t-role { font-size: 0.78rem; color: var(--gray-400); font-weight: 300; }
+  .t-quote-mark { position: absolute; top: 1.5rem; right: 1.5rem; font-family: var(--font-display); font-size: 4rem; color: var(--gold); opacity: 0.12; line-height: 1; }
+
+  /* ── CONTACT ── */
+  #contact { background: var(--navy); }
+  #contact .section-title { color: var(--white); }
+  #contact .section-subtitle { color: rgba(255,255,255,0.6); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; margin-top: 3.5rem; }
+  .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
+  .contact-item {
+    display: flex; gap: 1rem; align-items: flex-start;
+    padding: 1.2rem; background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-lg);
+    transition: border-color 0.2s;
+  }
+  .contact-item:hover { border-color: rgba(192,39,45,0.3); }
+  .contact-item-icon {
+    width: 44px; height: 44px; border-radius: var(--radius);
+    background: rgba(192,39,45,0.12); display: flex; align-items: center; justify-content: center;
+    font-size: 18px; flex-shrink: 0;
+  }
+  .contact-item-label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 3px; }
+  .contact-item-value { font-size: 0.9rem; color: rgba(255,255,255,0.8); font-weight: 300; line-height: 1.6; }
+  .contact-item a { color: rgba(255,255,255,0.8); transition: color 0.2s; }
+  .contact-item a:hover { color: var(--gold-light); }
+
+  .map-embed {
+    margin-top: 1.5rem; border-radius: var(--radius-lg); overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1); height: 200px;
+    background: rgba(255,255,255,0.04); display: flex; align-items: center; justify-content: center;
+    flex-direction: column; gap: 8px; cursor: pointer; transition: border-color 0.2s;
+    text-decoration: none;
+  }
+  .map-embed:hover { border-color: rgba(192,39,45,0.3); }
+  .map-embed-icon { font-size: 2rem; opacity: 0.4; }
+  .map-embed-text { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.4); font-weight: 700; }
+  .map-embed-hint { font-size: 11px; color: rgba(255,255,255,0.3); font-weight: 300; }
+
+  .contact-form { background: var(--white); border-radius: var(--radius-lg); padding: 2.5rem; }
+  .contact-form h3 { font-family: var(--font-display); font-size: 1.4rem; color: var(--navy); margin-bottom: 1.5rem; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .form-group { margin-bottom: 1.2rem; }
+  .form-group label { display: block; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--navy); font-weight: 700; margin-bottom: 6px; }
+  .form-group input, .form-group textarea, .form-group select {
+    width: 100%; padding: 12px 14px; border: 1px solid var(--gray-200);
+    border-radius: var(--radius); font-family: var(--font-body); font-size: 0.9rem; color: var(--gray-800);
+    background: var(--off-white); transition: border-color 0.2s, box-shadow 0.2s; outline: none;
+    -webkit-appearance: none;
+  }
+  .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+    border-color: var(--navy); box-shadow: 0 0 0 3px rgba(15,39,68,0.08);
+  }
+  .form-group textarea { resize: vertical; min-height: 120px; }
+  .btn-form {
+    width: 100%; background: var(--navy); color: var(--white);
+    padding: 14px; border: none; border-radius: var(--radius); font-family: var(--font-body);
+    font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    cursor: pointer; transition: all 0.2s;
+  }
+  .btn-form:hover { background: var(--navy-mid); }
+  .form-success { display: none; text-align: center; padding: 2rem; color: var(--navy); }
+  .form-success .check { font-size: 3rem; margin-bottom: 1rem; }
+  .form-success p { font-family: var(--font-display); font-size: 1.2rem; }
+
+  .whatsapp-btn {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    background: #25D366; color: var(--white);
+    padding: 14px; border-radius: var(--radius); font-size: 13px; font-weight: 700;
+    letter-spacing: 1px; text-transform: uppercase; margin-top: 1rem; transition: all 0.2s;
+  }
+  .whatsapp-btn:hover { background: #1ebe57; transform: translateY(-1px); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #08172b; padding: 60px 0 30px;
+    border-top: 1px solid rgba(192,39,45,0.15);
+  }
+  .footer-inner {
+    max-width: 1200px; margin: 0 auto; padding: 0 2rem;
+  }
+  .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.06); margin-bottom: 2rem; }
+  .footer-brand .nav-logo { margin-bottom: 1rem; }
+  .footer-brand p { font-size: 0.85rem; color: rgba(255,255,255,0.4); font-weight: 300; line-height: 1.8; max-width: 300px; margin-bottom: 1rem; }
+  .footer-col h4 { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 1rem; }
+  .footer-col a { display: block; font-size: 0.88rem; color: rgba(255,255,255,0.5); font-weight: 300; padding: 4px 0; transition: color 0.2s; }
+  .footer-col a:hover { color: var(--gold-light); }
+  .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .footer-bottom p { font-size: 0.8rem; color: rgba(255,255,255,0.25); }
+  .footer-gold-line { display: flex; align-items: center; gap: 8px; }
+  .fgl { width: 20px; height: 1px; background: var(--gold); opacity: 0.5; }
+  .footer-bottom span { font-size: 0.8rem; color: rgba(201,168,76,0.5); }
+
+  /* ── SCROLL ANIMATIONS ── */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+
+  /* ── MOBILE MENU ── */
+  #mobile-menu {
+    display: none; position: fixed; inset: 0; z-index: 999;
+    background: var(--navy); flex-direction: column;
+    align-items: center; justify-content: center; gap: 2rem;
+  }
+  #mobile-menu.open { display: flex; }
+  #mobile-menu a { font-size: 1.4rem; font-family: var(--font-display); color: var(--white); }
+  #mobile-menu a:hover { color: var(--gold-light); }
+  #mobile-menu .nav-cta { font-size: 1rem; padding: 14px 36px; }
+  .close-menu { position: absolute; top: 1.5rem; right: 2rem; font-size: 2rem; color: var(--white); cursor: pointer; background: none; border: none; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    .hero-content { grid-template-columns: 1fr; gap: 2.5rem; }
+    .hero-card { display: none; }
+    #about .container { grid-template-columns: 1fr; gap: 3rem; }
+    .about-img-wrapper { order: -1; }
+    .courses-grid { grid-template-columns: 1fr 1fr; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+    .footer-brand { grid-column: span 2; }
+  }
+
+  @media (max-width: 768px) {
+    section { padding: 70px 0; }
+    .nav-links { display: none; }
+    .nav-hamburger { display: flex; }
+    .why-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .courses-grid { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .gallery-item:first-child { grid-column: span 2; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .form-row { grid-template-columns: 1fr; }
+    .hero-stats { gap: 1.5rem; }
+    .footer-top { grid-template-columns: 1fr; }
+    .footer-brand { grid-column: span 1; }
+    .about-pillars { grid-template-columns: 1fr; }
+    .about-float { top: 1rem; right: 1rem; }
+  }
+
+  @media (max-width: 480px) {
+    .gallery-grid { grid-template-columns: 1fr; }
+    .gallery-item:first-child { grid-column: span 1; }
+  }
+
+  /* ── VIAJES ── */
+  #viajes { background: var(--navy); overflow: hidden; }
+  #viajes .section-title { color: var(--white); }
+  #viajes .section-subtitle { color: rgba(255,255,255,0.6); }
+  .viajes-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem; flex-wrap: wrap; gap: 1.5rem; }
+  .oxford-badge {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: rgba(192,39,45,0.15); border: 1px solid rgba(192,39,45,0.4);
+    padding: 8px 18px; border-radius: 2px;
+    font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--gold-light); font-weight: 700;
+  }
+  .viajes-info-grid {
+    display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin-bottom: 3.5rem;
+  }
+  .viaje-info-card {
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius-lg); padding: 1.5rem; text-align: center;
+    transition: border-color 0.2s;
+  }
+  .viaje-info-card:hover { border-color: rgba(192,39,45,0.35); }
+  .viaje-info-icon { font-size: 1.8rem; margin-bottom: 0.6rem; }
+  .viaje-info-label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-light); font-weight: 700; margin-bottom: 4px; }
+  .viaje-info-value { font-family: var(--font-display); font-size: 1rem; color: var(--white); line-height: 1.4; }
+
+  /* Carrusel */
+  .carousel-wrapper { position: relative; }
+  .carousel-track-outer {
+    overflow: hidden; border-radius: var(--radius-lg);
+    position: relative;
+  }
+  .carousel-track {
+    display: flex; gap: 1rem;
+    transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);
+    will-change: transform;
+  }
+  .carousel-slide {
+    flex: 0 0 calc(33.333% - 0.67rem);
+    min-width: 0; position: relative;
+    border-radius: var(--radius-lg); overflow: hidden;
+    aspect-ratio: 4/3; background: var(--navy-mid);
+    cursor: pointer;
+  }
+  .carousel-slide img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.4s; display: block;
+  }
+  .carousel-slide:hover img { transform: scale(1.04); }
+  .carousel-slide-placeholder {
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 10px;
+  }
+  .csp-pattern {
+    position: absolute; inset: 0;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 15px, rgba(192,39,45,0.05) 15px, rgba(192,39,45,0.05) 16px);
+  }
+  .csp-icon { font-size: 2.5rem; opacity: 0.2; position: relative; z-index: 1; }
+  .csp-label {
+    font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+    color: rgba(255,255,255,0.3); font-weight: 700; position: relative; z-index: 1;
+  }
+  .carousel-slide-caption {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    background: linear-gradient(to top, rgba(15,39,68,0.92) 0%, transparent 100%);
+    padding: 2rem 1rem 1rem;
+    opacity: 0; transition: opacity 0.3s;
+  }
+  .carousel-slide:hover .carousel-slide-caption { opacity: 1; }
+  .carousel-slide-caption span { font-size: 13px; color: var(--white); font-weight: 300; }
+
+  .carousel-controls {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+  .carousel-dots { display: flex; gap: 8px; align-items: center; }
+  .carousel-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: rgba(255,255,255,0.2); border: none; cursor: pointer;
+    transition: all 0.3s; padding: 0;
+  }
+  .carousel-dot.active { background: var(--gold); width: 24px; border-radius: 4px; }
+  .carousel-btns { display: flex; gap: 8px; }
+  .carousel-btn {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+    color: var(--white); font-size: 1.1rem; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s;
+  }
+  .carousel-btn:hover { background: var(--gold); border-color: var(--gold); }
+  .carousel-btn:disabled { opacity: 0.3; cursor: default; }
+  .carousel-btn:disabled:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); }
+
+  .viajes-cta {
+    margin-top: 3rem; text-align: center;
+    padding: 2.5rem; background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-lg);
+  }
+  .viajes-cta p { font-family: var(--font-display); font-size: 1.3rem; font-style: italic; color: var(--white); margin-bottom: 1.2rem; }
+  .viajes-cta small { display: block; font-size: 0.85rem; color: rgba(255,255,255,0.45); font-weight: 300; margin-top: 0.8rem; }
+
+  @media (max-width: 768px) {
+    .carousel-slide { flex: 0 0 calc(50% - 0.5rem); }
+    .viajes-info-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 480px) {
+    .carousel-slide { flex: 0 0 85%; }
+    .viajes-info-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <div class="nav-logo-mark">R</div>
+      <div class="nav-logo-text">
+        <span class="brand">REGENT</span>
+        <span class="sub">English Institute</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#about">Nosotros</a>
+      <a href="#courses">Cursos</a>
+      <a href="#viajes">Viajes</a>
+      <a href="#gallery">Galería</a>
+      <a href="#testimonials">Opiniones</a>
+      <a href="#contact" class="nav-cta">Contacto</a>
+    </div>
+    <div class="nav-hamburger" onclick="toggleMenu()" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu">
+  <button class="close-menu" onclick="toggleMenu()" aria-label="Cerrar">&times;</button>
+  <a href="#about" onclick="toggleMenu()">Nosotros</a>
+  <a href="#courses" onclick="toggleMenu()">Cursos</a>
+  <a href="#viajes" onclick="toggleMenu()">Viajes</a>
+  <a href="#gallery" onclick="toggleMenu()">Galería</a>
+  <a href="#testimonials" onclick="toggleMenu()">Opiniones</a>
+  <a href="#contact" onclick="toggleMenu()" class="nav-cta">Contacto</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-circle"></div>
+  <div class="hero-circle-sm"></div>
+  <div class="hero-accent-line"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-eyebrow">Instituto de inglés · Maipú, Mendoza</div>
+      <h1 class="hero-title">Aprendé inglés de forma <em>efectiva</em> y profesional</h1>
+      <p class="hero-subtitle">En REGENT English Institute combinamos metodologías modernas con docentes altamente capacitados para que alcances tus objetivos en el idioma más hablado del mundo.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Inscribite ahora →</a>
+        <a href="#courses" class="btn-outline">Ver cursos</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num">4.7★</span>
+          <span class="hero-stat-label">Calificación</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">20+</span>
+          <span class="hero-stat-label">Reseñas</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">100%</span>
+          <span class="hero-stat-label">Compromiso</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-title">¿Qué encontrás en REGENT?</div>
+      <div class="hero-card-item">
+        <div class="hero-card-icon">📚</div>
+        <span>Cursos para todas las edades y niveles</span>
+      </div>
+      <div class="hero-card-item">
+        <div class="hero-card-icon">🎓</div>
+        <span>Preparación para exámenes internacionales</span>
+      </div>
+      <div class="hero-card-item">
+        <div class="hero-card-icon">👤</div>
+        <span>Clases personalizadas según tus metas</span>
+      </div>
+      <div class="hero-card-item">
+        <div class="hero-card-icon">🏫</div>
+        <span>Excelentes instalaciones y profesores calificados</span>
+      </div>
+      <div class="hero-rating">
+        <span class="rating-num">4.7</span>
+        <div>
+          <div class="stars">★★★★★</div>
+          <div class="rating-text">Basado en 20 opiniones verificadas</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="container">
+    <div class="section-label">Por qué elegirnos</div>
+    <div class="why-grid">
+      <div class="why-features">
+        <div class="why-item reveal">
+          <div class="why-icon">🏆</div>
+          <div class="why-item-content">
+            <h3>Calidad reconocida</h3>
+            <p>Con una calificación de 4.7 estrellas basada en reseñas reales, nuestros alumnos valoran tanto la enseñanza como el ambiente institucional.</p>
+          </div>
+        </div>
+        <div class="why-item reveal reveal-delay-1">
+          <div class="why-icon">👩‍🏫</div>
+          <div class="why-item-content">
+            <h3>Profesores destacados</h3>
+            <p>Nuestro equipo docente cuenta con formación especializada y amplia experiencia, garantizando clases dinámicas y efectivas.</p>
+          </div>
+        </div>
+        <div class="why-item reveal reveal-delay-2">
+          <div class="why-icon">🔄</div>
+          <div class="why-item-content">
+            <h3>Metodología moderna</h3>
+            <p>Combinamos enfoques comunicativos con recursos actuales para que aprendas inglés de manera natural y progresiva.</p>
+          </div>
+        </div>
+        <div class="why-item reveal reveal-delay-3">
+          <div class="why-icon">📍</div>
+          <div class="why-item-content">
+            <h3>Ubicación conveniente</h3>
+            <p>Situados en el corazón de Maipú, Mendoza, con fácil acceso desde toda la zona metropolitana.</p>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual reveal reveal-delay-2">
+        <div class="why-visual-card">
+          <div class="why-visual-bg"></div>
+          <div class="why-visual-pattern"></div>
+          <div class="why-badge">
+            <span class="num">4.7</span>
+            ★ Estrellas
+          </div>
+          <div class="why-visual-text">
+            <div class="why-quote">"Bastante bien los profesores y las instalaciones"</div>
+            <div class="why-quote-attr">— Alumno de REGENT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-img-wrapper reveal">
+      <div class="about-img-bg">
+        <div class="about-img-pattern"></div>
+        <div class="about-img-content">
+          <div class="about-emblem">R</div>
+        </div>
+        <div class="about-img-overlay">
+          <p>"La educación es el pasaporte hacia el futuro, y el inglés es la llave que abre ese pasaporte."</p>
+          <span>REGENT English Institute</span>
+        </div>
+      </div>
+      <div class="about-float">
+        <span class="about-float-num">+</span>
+        <span class="about-float-label">Años de<br>experiencia</span>
+      </div>
+    </div>
+    <div class="about-text">
+      <div class="section-label">Sobre nosotros</div>
+      <h2 class="section-title">Un instituto comprometido con tu <em>aprendizaje</em></h2>
+      <p>REGENT English Institute nació con una misión clara: ofrecer a los mendocinos una formación en inglés de calidad real, adaptada a las necesidades del mundo actual. Desde nuestra sede en Maipú, hemos acompañado a cientos de estudiantes en su camino hacia el dominio del idioma.</p>
+      <p>Creemos que aprender inglés no se trata solo de memorizar vocabulario, sino de desarrollar confianza para comunicarse, abrirse a nuevas culturas y multiplicar oportunidades personales y profesionales.</p>
+      <div class="about-pillars reveal">
+        <div class="pillar">
+          <h4>Calidad docente</h4>
+          <p>Profesores formados y con vocación educativa real</p>
+        </div>
+        <div class="pillar">
+          <h4>Ambiente positivo</h4>
+          <p>Clases motivadoras en un entorno cálido y profesional</p>
+        </div>
+        <div class="pillar">
+          <h4>Resultados concretos</h4>
+          <p>Progreso medible desde la primera clase</p>
+        </div>
+        <div class="pillar">
+          <h4>Visión de futuro</h4>
+          <p>Plataforma educativa digital en desarrollo</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+  <div class="container">
+    <div class="courses-header">
+      <div>
+        <div class="section-label" style="color: var(--gold-light);">Oferta académica</div>
+        <h2 class="section-title">Nuestros <em>cursos</em></h2>
+        <p class="section-subtitle">Diseñados para cada etapa de vida y objetivo personal o profesional.</p>
+      </div>
+    </div>
+    <div class="courses-grid">
+      <div class="course-card reveal">
+        <div class="course-num">01</div>
+        <div class="course-icon">🧒</div>
+        <h3>Inglés para niños</h3>
+        <p>Aprendizaje lúdico y motivador para los más pequeños. Desarrollamos las bases del idioma a través del juego y la creatividad.</p>
+        <div class="course-tags">
+          <span class="course-tag">5 – 12 años</span>
+          <span class="course-tag">Presencial</span>
+        </div>
+        <a href="#contact" class="course-link">Más información →</a>
+      </div>
+      <div class="course-card featured reveal reveal-delay-1">
+        <div class="course-num">02</div>
+        <div class="course-icon">🧑‍💻</div>
+        <h3>Inglés para adolescentes</h3>
+        <p>Preparamos a los jóvenes para la universidad, el trabajo y el mundo globalizado con clases dinámicas y enfocadas.</p>
+        <div class="course-tags">
+          <span class="course-tag">13 – 18 años</span>
+          <span class="course-tag">Presencial</span>
+        </div>
+        <a href="#contact" class="course-link">Más información →</a>
+      </div>
+      <div class="course-card reveal reveal-delay-2">
+        <div class="course-num">03</div>
+        <div class="course-icon">💼</div>
+        <h3>Inglés para adultos</h3>
+        <p>Clases adaptadas al ritmo de vida adulto. Potenciá tu carrera y abrí puertas a nuevas oportunidades laborales.</p>
+        <div class="course-tags">
+          <span class="course-tag">+18 años</span>
+          <span class="course-tag">Presencial</span>
+        </div>
+        <a href="#contact" class="course-link">Más información →</a>
+      </div>
+      <div class="course-card reveal reveal-delay-1">
+        <div class="course-num">04</div>
+        <div class="course-icon">🏅</div>
+        <h3>Preparación para exámenes</h3>
+        <p>Preparamos para Cambridge, IELTS, TOEFL y otros reconocidos. Estrategias y práctica intensiva para lograr el puntaje que necesitás.</p>
+        <div class="course-tags">
+          <span class="course-tag">Cambridge</span>
+          <span class="course-tag">IELTS</span>
+          <span class="course-tag">TOEFL</span>
+        </div>
+        <a href="#contact" class="course-link">Más información →</a>
+      </div>
+      <div class="course-card reveal reveal-delay-3">
+        <div class="course-num">05</div>
+        <div class="course-icon">🌐</div>
+        <h3>Inglés Business</h3>
+        <p>Inglés orientado al ámbito laboral y empresarial. Perfecto para profesionales que necesitan comunicarse con confianza en contextos de trabajo.</p>
+        <div class="course-tags">
+          <span class="course-tag">Adultos</span>
+          <span class="course-tag">Presencial</span>
+        </div>
+        <a href="#contact" class="course-link">Más información →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIAJES -->
+<section id="viajes">
+  <div class="container">
+    <div class="viajes-header">
+      <div>
+        <div class="section-label" style="color: var(--gold-light);">Experiencia internacional</div>
+        <h2 class="section-title">Viajes a <em>Oxford</em></h2>
+        <p class="section-subtitle">Una experiencia única que va más allá del aula: nuestros alumnos viven el inglés en su tierra natal.</p>
+      </div>
+      <div class="oxford-badge">✈️ Oxford, Reino Unido</div>
+    </div>
+
+    <div class="viajes-info-grid reveal">
+      <div class="viaje-info-card">
+        <div class="viaje-info-icon">🏛️</div>
+        <div class="viaje-info-label">Destino</div>
+        <div class="viaje-info-value">Oxford, Inglaterra<br>Reino Unido</div>
+      </div>
+      <div class="viaje-info-card">
+        <div class="viaje-info-icon">📚</div>
+        <div class="viaje-info-label">Actividades</div>
+        <div class="viaje-info-value">Clases intensivas, visitas culturales y turismo educativo</div>
+      </div>
+      <div class="viaje-info-card">
+        <div class="viaje-info-icon">🎓</div>
+        <div class="viaje-info-label">Para quién</div>
+        <div class="viaje-info-value">Alumnos de REGENT de todos los niveles</div>
+      </div>
+    </div>
+
+    <!-- CARRUSEL -->
+    <div class="carousel-wrapper reveal">
+      <div class="carousel-track-outer">
+        <div class="carousel-track" id="carouselTrack">
+
+          <div class="carousel-slide">
+            <img src="imagenes/viajes/oxford-1.jpg" alt="Viaje Oxford 1" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="carousel-slide-placeholder" style="display:none">
+              <div class="csp-pattern"></div>
+              <span class="csp-icon">🏛️</span>
+              <span class="csp-label">Oxford · Foto 1</span>
+            </div>
+            <div class="carousel-slide-caption"><span>Universidad de Oxford</span></div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="imagenes/viajes/oxford-2.jpg" alt="Viaje Oxford 2" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="carousel-slide-placeholder" style="display:none">
+              <div class="csp-pattern"></div>
+              <span class="csp-icon">📖</span>
+              <span class="csp-label">Oxford · Foto 2</span>
+            </div>
+            <div class="carousel-slide-caption"><span>Clases en Oxford</span></div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="imagenes/viajes/oxford-3.jpg" alt="Viaje Oxford 3" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="carousel-slide-placeholder" style="display:none">
+              <div class="csp-pattern"></div>
+              <span class="csp-icon">🌉</span>
+              <span class="csp-label">Oxford · Foto 3</span>
+            </div>
+            <div class="carousel-slide-caption"><span>Recorrido por la ciudad</span></div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="imagenes/viajes/oxford-4.jpg" alt="Viaje Oxford 4" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="carousel-slide-placeholder" style="display:none">
+              <div class="csp-pattern"></div>
+              <span class="csp-icon">🎒</span>
+              <span class="csp-label">Oxford · Foto 4</span>
+            </div>
+            <div class="carousel-slide-caption"><span>Alumnos REGENT en Oxford</span></div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="imagenes/viajes/oxford-5.jpg" alt="Viaje Oxford 5" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="carousel-slide-placeholder" style="display:none">
+              <div class="csp-pattern"></div>
+              <span class="csp-icon">🏰</span>
+              <span class="csp-label">Oxford · Foto 5</span>
+            </div>
+            <div class="carousel-slide-caption"><span>Arquitectura histórica</span></div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="imagenes/viajes/oxford-6.jpg" alt="Viaje Oxford 6" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="carousel-slide-placeholder" style="display:none">
+              <div class="csp-pattern"></div>
+              <span class="csp-icon">🌿</span>
+              <span class="csp-label">Oxford · Foto 6</span>
+            </div>
+            <div class="carousel-slide-caption"><span>Jardines y campus</span></div>
+          </div>
+
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <div class="carousel-dots" id="carouselDots"></div>
+        <div class="carousel-btns">
+          <button class="carousel-btn" id="carouselPrev" onclick="moveCarousel(-1)" aria-label="Anterior">&#8592;</button>
+          <button class="carousel-btn" id="carouselNext" onclick="moveCarousel(1)" aria-label="Siguiente">&#8594;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="viajes-cta reveal">
+      <p>"Aprender inglés en Oxford es una experiencia que cambia la vida"</p>
+      <a href="#contact" class="btn-primary" style="display:inline-flex;">Quiero saber más sobre los viajes →</a>
+      <small>Consultá disponibilidad, fechas y costos sin compromiso</small>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <div class="gallery-intro">
+      <div>
+        <div class="section-label">Nuestro espacio</div>
+        <h2 class="section-title">Instalaciones <em>pensadas</em> para vos</h2>
+      </div>
+      <p class="section-subtitle" style="max-width:360px;">Un ambiente cálido, moderno y estimulante donde el aprendizaje fluye de manera natural.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal">
+        <div class="gallery-item-bg gi-1">
+          <div class="gallery-pattern"></div>
+          <span class="gallery-icon">🏫</span>
+        </div>
+        <div class="gallery-item-label">Salón principal</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-1">
+        <div class="gallery-item-bg gi-2">
+          <div class="gallery-pattern"></div>
+          <span class="gallery-icon">📖</span>
+        </div>
+        <div class="gallery-item-label">Biblioteca</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2">
+        <div class="gallery-item-bg gi-3">
+          <div class="gallery-pattern"></div>
+          <span class="gallery-icon">💻</span>
+        </div>
+        <div class="gallery-item-label">Entrada del instituto</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-1">
+        <div class="gallery-item-bg gi-4">
+          <div class="gallery-pattern"></div>
+          <span class="gallery-icon">👥</span>
+        </div>
+        <div class="gallery-item-label">Clases grupales</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2">
+        <div class="gallery-item-bg gi-5">
+          <div class="gallery-pattern"></div>
+          <span class="gallery-icon">🎓</span>
+        </div>
+        <div class="gallery-item-label">Ceremonia de graduación</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="testimonials-header">
+      <div class="section-label">Opiniones</div>
+      <h2 class="section-title">Lo que dicen nuestros <em>alumnos</em></h2>
+    </div>
+    <div class="rating-display reveal">
+      <span class="rating-big">4.7</span>
+      <div class="rating-stars-col">
+        <span class="rating-stars-big">★★★★★</span>
+        <span class="rating-count">Basado en 20 opiniones en Google</span>
+      </div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="t-quote-mark">"</div>
+        <div class="t-stars">★★★★★</div>
+        <p class="t-text">Excelente instituto. La calidad de los profesores y el trato personalizado hacen que aprender inglés sea realmente posible.</p>
+        <div class="t-author">
+          <div class="t-avatar">MG</div>
+          <div>
+            <div class="t-name">Martina G.</div>
+            <div class="t-role">Alumna de nivel intermedio</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card highlight reveal reveal-delay-1">
+        <div class="t-quote-mark">"</div>
+        <div class="t-stars">★★★★★</div>
+        <p class="t-text">Bastante bien los profesores y las instalaciones. El ambiente es muy agradable y los docentes tienen mucha dedicación.</p>
+        <div class="t-author">
+          <div class="t-avatar">RL</div>
+          <div>
+            <div class="t-name">Roberto L.</div>
+            <div class="t-role">Alumno adulto</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="t-quote-mark">"</div>
+        <div class="t-stars">★★★★★</div>
+        <p class="t-text">Excelente 👏🏽👏🏽 Recomiendo REGENT a cualquiera que quiera aprender inglés de verdad. Muy buen nivel y atención.</p>
+        <div class="t-author">
+          <div class="t-avatar">SV</div>
+          <div>
+            <div class="t-name">Sofía V.</div>
+            <div class="t-role">Alumna de preparación FCE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-label" style="color: var(--gold-light);">Contacto</div>
+    <h2 class="section-title">Empezá tu camino <em>hoy</em></h2>
+    <p class="section-subtitle">Completá el formulario o escribinos y te asesoramos sin compromiso.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item reveal">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <div class="contact-item-label">Dirección</div>
+            <div class="contact-item-value">Padre Vásquez 446<br>M5515 Maipú, Mendoza, Argentina</div>
+          </div>
+        </div>
+        <div class="contact-item reveal reveal-delay-1">
+          <div class="contact-item-icon">📞</div>
+          <div>
+            <div class="contact-item-label">Teléfono</div>
+            <div class="contact-item-value"><a href="tel:+5402614974013">0261 497-4013</a></div>
+          </div>
+        </div>
+        <div class="contact-item reveal reveal-delay-2">
+          <div class="contact-item-icon">⭐</div>
+          <div>
+            <div class="contact-item-label">Calificación</div>
+            <div class="contact-item-value">4.7 / 5 · 20 opiniones verificadas en Google</div>
+          </div>
+        </div>
+        <a href="https://www.google.com/maps/search/Padre+Vásquez+446+Maipú+Mendoza" target="_blank" rel="noopener" class="map-embed reveal reveal-delay-3">
+          <span class="map-embed-icon">🗺️</span>
+          <span class="map-embed-text">Ver en Google Maps</span>
+          <span class="map-embed-hint">Padre Vásquez 446, Maipú, Mendoza</span>
+        </a>
+        <a href="https://wa.me/5492614974013?text=Hola%2C%20me%20gustaría%20obtener%20información%20sobre%20los%20cursos%20de%20REGENT%20English%20Institute" target="_blank" rel="noopener" class="whatsapp-btn reveal">
+          💬 Escribinos por WhatsApp
+        </a>
+      </div>
+      <div class="contact-form reveal reveal-delay-1">
+        <h3>Solicitar información</h3>
+        <div id="contact-form-content">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="tu@email.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="curso">Curso de interés</label>
+            <select id="curso">
+              <option value="">Seleccioná una opción</option>
+              <option>Inglés para niños</option>
+              <option>Inglés para adolescentes</option>
+              <option>Inglés para adultos</option>
+              <option>Preparación para exámenes</option>
+              <option>Inglés Business</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" placeholder="Contanos brevemente qué necesitás..."></textarea>
+          </div>
+          <button class="btn-form" onclick="submitForm()">Enviar consulta</button>
+        </div>
+        <div class="form-success" id="form-success">
+          <div class="check">✅</div>
+          <p>¡Gracias! Te contactamos pronto.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <div class="nav-logo-mark">R</div>
+          <div class="nav-logo-text">
+            <span class="brand">REGENT</span>
+            <span class="sub">English Institute</span>
+          </div>
+        </div>
+        <p>Academia de inglés en Maipú, Mendoza. Formamos comunicadores seguros, con metodología moderna y docentes comprometidos.</p>
+        <div class="footer-gold-line"><div class="fgl"></div><span>Maipú, Mendoza · Argentina</span></div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <a href="#about">Sobre nosotros</a>
+        <a href="#courses">Cursos</a>
+        <a href="#viajes">Viajes</a>
+        <a href="#gallery">Galería</a>
+        <a href="#testimonials">Opiniones</a>
+        <a href="#contact">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h4>Información</h4>
+        <a href="tel:+5402614974013">0261 497-4013</a>
+        <a href="https://www.google.com/maps/search/Padre+Vásquez+446+Maipú+Mendoza" target="_blank" rel="noopener">Padre Vásquez 446, Maipú</a>
+        <a href="https://wa.me/5492614974013" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 REGENT English Institute · Todos los derechos reservados</p>
+      <p>Diseñado con dedicación para la comunidad educativa de Mendoza</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Navbar scroll
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // Mobile menu
+  function toggleMenu() {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  }
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal, .why-item').forEach(el => observer.observe(el));
+
+  // Form submit
+  function submitForm() {
+    const nombre = document.getElementById('nombre').value.trim();
+    const email = document.getElementById('email').value.trim();
+    if (!nombre || !email) {
+      alert('Por favor completá al menos tu nombre y email.');
+      return;
+    }
+    document.getElementById('contact-form-content').style.display = 'none';
+    document.getElementById('form-success').style.display = 'block';
+  }
+  // Carousel
+  (function() {
+    const track = document.getElementById('carouselTrack');
+    const dotsContainer = document.getElementById('carouselDots');
+    const slides = track ? track.querySelectorAll('.carousel-slide') : [];
+    if (!slides.length) return;
+
+    let current = 0;
+    let perView = 3;
+
+    function getPerView() {
+      if (window.innerWidth <= 480) return 1;
+      if (window.innerWidth <= 768) return 2;
+      return 3;
+    }
+
+    function totalPages() { return Math.max(1, slides.length - perView + 1); }
+
+    function buildDots() {
+      dotsContainer.innerHTML = '';
+      for (let i = 0; i < totalPages(); i++) {
+        const d = document.createElement('button');
+        d.className = 'carousel-dot' + (i === current ? ' active' : '');
+        d.setAttribute('aria-label', 'Ir a foto ' + (i + 1));
+        d.onclick = () => goTo(i);
+        dotsContainer.appendChild(d);
+      }
+    }
+
+    function goTo(idx) {
+      perView = getPerView();
+      const max = totalPages() - 1;
+      current = Math.max(0, Math.min(idx, max));
+      const slideWidth = slides[0].offsetWidth + 16;
+      track.style.transform = `translateX(-${current * slideWidth}px)`;
+      buildDots();
+      document.getElementById('carouselPrev').disabled = current === 0;
+      document.getElementById('carouselNext').disabled = current >= max;
+    }
+
+    window.moveCarousel = function(dir) { goTo(current + dir); };
+
+    window.addEventListener('resize', () => { perView = getPerView(); goTo(current); });
+
+    perView = getPerView();
+    buildDots();
+    goTo(0);
+
+    // Touch/swipe support
+    let startX = 0;
+    track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+    track.addEventListener('touchend', e => {
+      const diff = startX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) moveCarousel(diff > 0 ? 1 : -1);
+    });
+  })();
+</script>
+</body>
+</html>
